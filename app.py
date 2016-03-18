@@ -12,9 +12,9 @@ def get_db_config(name):
     return row[0]
 
 cloudinary.config(
-    cloud_name =    get_db_config('cloud_name'),# "danleyb2" 
-    api_key = get_db_config('api_key'), #"944437879321554" 
-    api_secret = get_db_config('api_secret')  #"LA1IetNarUth6vzQU1XlLfQANsY"
+    cloud_name =    get_db_config('cloud_name'),
+    api_key = get_db_config('api_key'), 
+    api_secret = get_db_config('api_secret') 
     )
 
 app=Flask(__name__)
